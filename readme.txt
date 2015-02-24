@@ -20,7 +20,12 @@ A plugin that sends error messages to the [Sentry error logging system](https://
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. In Settings > Sentry, add your Sentry DSN and set the error reporting threshold level.
 
-== Changelog ==
+== Bug reports and support ==
 
-= 1.0 =
+To report bugs and get help, see the [official github repository](https://github.com/ryanbagwell/wordpress-sentry/issues).
+
+== Changelog ==
+= 0.1 =
+
 * Added first release.
+
