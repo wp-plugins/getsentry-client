@@ -4,9 +4,11 @@ Donate link: https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=WW3LiAp4
 Tags: sentry, logging, diagnostics, debugging
 Requires at least: 3.0.1
 Tested up to: 3.4
-Stable tag: 0.2
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+GitHub Plugin URI: https://github.com/ryanbagwell/wordpress-sentry
+GitHub Branch: master
 
 A plugin that sends error messages to the Sentry error logging system.
 
@@ -29,9 +31,14 @@ To report bugs and get help, see the [official github repository](https://github
 
 * Added first release.
 
-= 0.1 =
+= 0.2 =
 
 * Updated Raven PHP Client
+
+= 0.3 =
+
+* Fixed deprecated argument in add_options_page
+* Added support for [Github Updater plugin](https://github.com/afragen/github-updater)
 
 
 

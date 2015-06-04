@@ -5,7 +5,7 @@
   Plugin URI: http://www.hzdg.com
   Description: Sends PHP errors to Django Sentry
   Author: Ryan Bagwell
-  Version: 1
+  Version: 0.3
   Author URI: http://www.ryanbagwell.com
  */
 
@@ -23,7 +23,7 @@ class WPSentry extends WP_Raven_Client {
 	}
 
 	public function addOptionsPage() {
-		add_options_page('Sentry Error Reporting Settings', 'Sentry', 8, 'sentrysettings', array($this, 'printOptionsHTML'));
+		add_options_page('Sentry Error Reporting Settings', 'Sentry', 'edit_pages', 'sentrysettings', array($this, 'printOptionsHTML'));
 	}
 
 	public function printOptionsHTML() {
@@ -42,7 +42,7 @@ class WPSentry extends WP_Raven_Client {
 			'reporting_level' => $_POST['sentry_reporting_level']
 		));
 	}
-	
+
 	public function getSettings() {
 		return $this->settings;
 	}
@@ -51,7 +51,7 @@ class WPSentry extends WP_Raven_Client {
 		try {
 			$wps = new WPSentry();
 		} catch (Exception $e) {
-			
+
 		}
 	}
 }
